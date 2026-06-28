@@ -154,8 +154,11 @@ export default async function AboutPage() {
         </ScrollReveal>
       </section>
 
+      {/* ── İçerik + CTA wrapper (ortak arka plan) ── */}
+      <div style={{ backgroundImage: "url('/AboutBackground.png')", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat" }}>
+
       {/* ── İçerik ── */}
-      <section className="pt-10 pb-14 px-6" style={{ backgroundImage: "url('/AboutBackground.png')", backgroundSize: "100% 100%", backgroundRepeat: "no-repeat" }}>
+      <section className="pt-10 pb-14 px-6">
         <div className="max-w-[900px] mx-auto">
 
           {/* Başlık */}
@@ -308,7 +311,7 @@ export default async function AboutPage() {
       </section>
 
       {/* ── CTA Alt Bant ── */}
-      <section className="px-6 pb-16 bg-white">
+      <section className="px-6 pb-16">
         <ScrollReveal delay={0.1} className="max-w-[900px] mx-auto">
           <div
             className="flex flex-col sm:flex-row items-center justify-between gap-4 px-8 py-5 rounded-[20px]"
@@ -342,6 +345,8 @@ export default async function AboutPage() {
           </div>
         </ScrollReveal>
       </section>
+
+      </div>{/* ── arka plan wrapper kapanışı ── */}
 
     </div>
   );
