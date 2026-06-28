@@ -308,32 +308,37 @@ export default async function AboutPage() {
       </section>
 
       {/* ── CTA Alt Bant ── */}
-      <section className="py-5 px-6 mb-16" style={{
-        background: "linear-gradient(to right, #ede9fe 0%, #f5f3ff 25%, #faf5ff 50%, #fdf4ff 75%, #fce7f3 100%)",
-      }}>
-        <ScrollReveal delay={0.1} className="max-w-[900px] mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
-          <div>
-            <p className="font-[family-name:var(--font-jakarta)] font-bold text-[18px] text-[#0F172A] mb-0.5">
-              Projenizi konuşalım
-            </p>
-            <p className="text-[13px] text-[#64748B]">Özel ambalaj ihtiyaçlarınız için teklif alın.</p>
-          </div>
-          <div className="flex items-center gap-3 flex-wrap shrink-0">
-            {about.contactEmail && (
-              <a
-                href={`mailto:${about.contactEmail}`}
-                className="inline-flex items-center px-6 py-2.5 rounded-full text-white text-[13px] font-semibold hover:opacity-90 transition-opacity duration-200"
-                style={{ background: "linear-gradient(135deg, #7C3AED, #9B2FC9)" }}
+      <section className="px-6 pb-16 bg-white">
+        <ScrollReveal delay={0.1} className="max-w-[900px] mx-auto">
+          <div
+            className="flex flex-col sm:flex-row items-center justify-between gap-4 px-8 py-5 rounded-[20px]"
+            style={{
+              background: "linear-gradient(to right, #ede9fe 0%, #f5f3ff 30%, #fdf4ff 65%, #fce7f3 100%)",
+            }}
+          >
+            <div>
+              <p className="font-[family-name:var(--font-jakarta)] font-bold text-[18px] text-[#0F172A] mb-0.5">
+                Projenizi konuşalım
+              </p>
+              <p className="text-[13px] text-[#64748B]">Özel ambalaj ihtiyaçlarınız için teklif alın.</p>
+            </div>
+            <div className="flex items-center gap-3 flex-wrap shrink-0">
+              {about.contactEmail && (
+                <a
+                  href={`mailto:${about.contactEmail}`}
+                  className="inline-flex items-center px-6 py-2.5 rounded-full text-white text-[13px] font-semibold hover:opacity-90 transition-opacity duration-200"
+                  style={{ background: "linear-gradient(135deg, #7C3AED, #9B2FC9)" }}
+                >
+                  {about.contactEmail}
+                </a>
+              )}
+              <Link
+                href="/products"
+                className="inline-flex items-center px-6 py-2.5 rounded-full border border-[#E2E8F0] text-[13px] font-semibold text-[#374151] bg-white shadow-sm hover:bg-[#F8FAFC] transition-colors duration-200"
               >
-                {about.contactEmail}
-              </a>
-            )}
-            <Link
-              href="/products"
-              className="inline-flex items-center px-6 py-2.5 rounded-full border border-[#E2E8F0] text-[13px] font-semibold text-[#374151] bg-white shadow-sm hover:bg-[#F8FAFC] transition-colors duration-200"
-            >
-              Ürünleri İncele →
-            </Link>
+                Ürünleri İncele →
+              </Link>
+            </div>
           </div>
         </ScrollReveal>
       </section>
