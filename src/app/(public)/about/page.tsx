@@ -309,8 +309,7 @@ export default async function AboutPage() {
 
       {/* ── CTA Alt Bant ── */}
       <section className="py-5 px-6" style={{
-        background: "linear-gradient(135deg, rgba(243,232,255,0.6) 0%, rgba(255,255,255,0.9) 40%, rgba(255,237,213,0.5) 100%)",
-        borderTop: "1px solid rgba(155,47,201,0.1)",
+        background: "linear-gradient(to right, #ede9fe 0%, #f5f3ff 25%, #faf5ff 50%, #fdf4ff 75%, #fce7f3 100%)",
       }}>
         <ScrollReveal delay={0.1} className="max-w-[900px] mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
           <div>
@@ -324,14 +323,14 @@ export default async function AboutPage() {
               <a
                 href={`mailto:${about.contactEmail}`}
                 className="inline-flex items-center px-6 py-2.5 rounded-full text-white text-[13px] font-semibold hover:opacity-90 transition-opacity duration-200"
-                style={{ background: "linear-gradient(135deg, #9B2FC9, #C06B3A)" }}
+                style={{ background: "linear-gradient(135deg, #7C3AED, #9B2FC9)" }}
               >
                 {about.contactEmail}
               </a>
             )}
             <Link
               href="/products"
-              className="inline-flex items-center px-6 py-2.5 rounded-full border border-[#E2E8F0] text-[13px] font-semibold text-[#374151] bg-white hover:bg-[#F8FAFC] transition-colors duration-200"
+              className="inline-flex items-center px-6 py-2.5 rounded-full border border-[#E2E8F0] text-[13px] font-semibold text-[#374151] bg-white shadow-sm hover:bg-[#F8FAFC] transition-colors duration-200"
             >
               Ürünleri İncele →
             </Link>
