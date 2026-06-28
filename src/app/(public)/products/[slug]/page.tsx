@@ -74,7 +74,7 @@ export default async function ProductDetailPage(props: {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-0 bg-white rounded-[24px] border border-[#E2E8F0] overflow-hidden shadow-[0_1px_4px_rgba(15,23,42,0.06)]">
 
           {/* Sol — Görsel Galerisi */}
-          <div className="p-7 bg-[#F8FAFC] border-r border-[#E2E8F0] flex flex-col">
+          <div className="p-7 bg-[#F8FAFC] border-r border-[#E2E8F0] flex flex-col h-[340px] md:h-auto">
             <ProductImageGallery images={allImages} title={product.title} />
           </div>
 
