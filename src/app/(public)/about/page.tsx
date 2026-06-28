@@ -1,3 +1,5 @@
+export const dynamic = "force-dynamic";
+
 import { notFound } from "next/navigation";
 import { getAbout } from "@/lib/firestore/about";
 import Link from "next/link";

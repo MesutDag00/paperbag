@@ -1,3 +1,5 @@
+export const dynamic = "force-dynamic";
+
 import { getPublishedProducts, getNewProducts } from "@/lib/firestore/products";
 import { getAllCategories } from "@/lib/firestore/categories";
 import { ProductFilterClient } from "@/components/public/ProductFilterClient";

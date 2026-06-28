@@ -1,3 +1,5 @@
+export const dynamic = "force-dynamic";
+
 import { getAllCategories } from "@/lib/firestore/categories";
 import { getFeaturedProducts } from "@/lib/firestore/products";
 import { GradientButton } from "@/components/ui/gradient-button";
