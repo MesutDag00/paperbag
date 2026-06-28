@@ -155,7 +155,7 @@ export default async function AboutPage() {
       </section>
 
       {/* ── İçerik ── */}
-      <section className="pt-10 pb-14 px-6" style={{ backgroundImage: "url('/AboutBackground.png')", backgroundSize: "cover", backgroundPosition: "center" }}>
+      <section className="pt-10 pb-14 px-6" style={{ backgroundImage: "url('/AboutBackground.png')", backgroundSize: "100% 100%", backgroundRepeat: "no-repeat" }}>
         <div className="max-w-[900px] mx-auto">
 
           {/* Başlık */}
