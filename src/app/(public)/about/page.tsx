@@ -313,7 +313,7 @@ export default async function AboutPage() {
           <div
             className="flex flex-col sm:flex-row items-center justify-between gap-4 px-8 py-5 rounded-[20px]"
             style={{
-              background: "linear-gradient(to right, #ede9fe 0%, #f5f3ff 30%, #fdf4ff 65%, #fce7f3 100%)",
+              background: "linear-gradient(to right, #ddd6fe 0%, #f5f3ff 40%, #fef3c7 75%, #fde8c8 100%)",
             }}
           >
             <div>
@@ -327,7 +327,7 @@ export default async function AboutPage() {
                 <a
                   href={`mailto:${about.contactEmail}`}
                   className="inline-flex items-center px-6 py-2.5 rounded-full text-white text-[13px] font-semibold hover:opacity-90 transition-opacity duration-200"
-                  style={{ background: "linear-gradient(135deg, #7C3AED, #9B2FC9)" }}
+                  style={{ background: "linear-gradient(to right, #9B2FC9, #F5A623)" }}
                 >
                   {about.contactEmail}
                 </a>
