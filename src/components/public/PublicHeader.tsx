@@ -78,7 +78,7 @@ export function PublicHeader({ brandName }: { brandName: string }) {
                   className={cn(
                     "px-4 py-3 rounded-[10px] text-[14px] font-medium transition-colors",
                     isActive
-                      ? "text-transparent bg-clip-text bg-gradient-to-r from-[#9B2FC9] to-[#F5A623] bg-[#F8FAFC]"
+                      ? "text-transparent bg-clip-text bg-gradient-to-r from-[#9B2FC9] to-[#F5A623]"
                       : "text-[#64748B] hover:text-[#0F172A] hover:bg-[#F8FAFC]"
                   )}
                 >
