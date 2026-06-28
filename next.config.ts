@@ -22,7 +22,15 @@ const nextConfig: NextConfig = {
       },
     ],
   },
-  serverExternalPackages: ["firebase-admin", "cloudinary"],
+  serverExternalPackages: [
+    "firebase-admin",
+    "firebase-admin/app",
+    "firebase-admin/auth",
+    "firebase-admin/firestore",
+    "jwks-rsa",
+    "jose",
+    "cloudinary",
+  ],
 };
 
 export default nextConfig;
