@@ -155,7 +155,7 @@ export default async function AboutPage() {
       </section>
 
       {/* ── İçerik ── */}
-      <section className="pt-10 pb-14 px-6" style={{ background: "linear-gradient(180deg, #fafafa 0%, #ffffff 100px)" }}>
+      <section className="pt-10 pb-14 px-6" style={{ backgroundImage: "url('/AboutBackground.png')", backgroundSize: "cover", backgroundPosition: "center" }}>
         <div className="max-w-[900px] mx-auto">
 
           {/* Başlık */}
@@ -170,7 +170,7 @@ export default async function AboutPage() {
 
           {/* Tek birleşik kart */}
           <ScrollReveal delay={0.1}>
-          <div className="rounded-[28px] border border-[#EDE9F6] overflow-hidden" style={{ backgroundImage: "url('/AboutBackground.png')", backgroundSize: "cover", backgroundPosition: "center" }}>
+          <div className="rounded-[28px] border border-[#EDE9F6] overflow-hidden" style={{ background: "linear-gradient(135deg, #fdf8ff 0%, #fff9f0 100%)" }}>
             {/* Üst gradient şerit */}
             <div className="h-[3px]" style={{ background: "linear-gradient(90deg, #9B2FC9, #F5A623)" }} />
 
