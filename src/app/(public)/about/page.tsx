@@ -308,27 +308,30 @@ export default async function AboutPage() {
       </section>
 
       {/* ── CTA Alt Bant ── */}
-      <section className="py-16 px-6 bg-white border-t border-[#F1F5F9]">
-        <ScrollReveal delay={0.1} className="max-w-[900px] mx-auto flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
+      <section className="py-5 px-6" style={{
+        background: "linear-gradient(135deg, rgba(243,232,255,0.6) 0%, rgba(255,255,255,0.9) 40%, rgba(255,237,213,0.5) 100%)",
+        borderTop: "1px solid rgba(155,47,201,0.1)",
+      }}>
+        <ScrollReveal delay={0.1} className="max-w-[900px] mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
           <div>
-            <p className="font-[family-name:var(--font-jakarta)] font-bold text-[22px] text-[#0F172A] mb-1">
+            <p className="font-[family-name:var(--font-jakarta)] font-bold text-[18px] text-[#0F172A] mb-0.5">
               Projenizi konuşalım
             </p>
-            <p className="text-[15px] text-[#64748B]">Özel ambalaj ihtiyaçlarınız için teklif alın.</p>
+            <p className="text-[13px] text-[#64748B]">Özel ambalaj ihtiyaçlarınız için teklif alın.</p>
           </div>
           <div className="flex items-center gap-3 flex-wrap shrink-0">
             {about.contactEmail && (
               <a
                 href={`mailto:${about.contactEmail}`}
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-[12px] text-white text-[14px] font-semibold hover:shadow-[0_4px_20px_rgba(155,47,201,0.4)] transition-shadow duration-200"
-                style={{ background: "linear-gradient(135deg, #9B2FC9, #F5A623)" }}
+                className="inline-flex items-center px-6 py-2.5 rounded-full text-white text-[13px] font-semibold hover:opacity-90 transition-opacity duration-200"
+                style={{ background: "linear-gradient(135deg, #9B2FC9, #C06B3A)" }}
               >
                 {about.contactEmail}
               </a>
             )}
             <Link
               href="/products"
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-[12px] border border-[#E2E8F0] text-[14px] font-semibold text-[#64748B] bg-white hover:bg-[#F8FAFC] hover:text-[#0F172A] transition-colors duration-200"
+              className="inline-flex items-center px-6 py-2.5 rounded-full border border-[#E2E8F0] text-[13px] font-semibold text-[#374151] bg-white hover:bg-[#F8FAFC] transition-colors duration-200"
             >
               Ürünleri İncele →
             </Link>
