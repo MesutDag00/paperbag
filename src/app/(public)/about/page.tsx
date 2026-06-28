@@ -308,7 +308,7 @@ export default async function AboutPage() {
       </section>
 
       {/* ── CTA Alt Bant ── */}
-      <section className="py-5 px-6" style={{
+      <section className="py-5 px-6 mb-16" style={{
         background: "linear-gradient(to right, #ede9fe 0%, #f5f3ff 25%, #faf5ff 50%, #fdf4ff 75%, #fce7f3 100%)",
       }}>
         <ScrollReveal delay={0.1} className="max-w-[900px] mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
