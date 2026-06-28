@@ -216,8 +216,8 @@ export default async function AboutPage() {
                     desc: "Yüksek standartlı üretim süreçleri",
                   },
                 ].map(({ icon, title, desc }) => (
-                  <div key={title} className="flex-1 flex items-center gap-5 p-7">
-                    <div className="w-11 h-11 rounded-[12px] bg-white shadow-sm border border-[#EDE9F6] flex items-center justify-center shrink-0">
+                  <div key={title} className="group flex-1 flex items-center gap-5 p-7">
+                    <div className="w-11 h-11 rounded-[12px] bg-white shadow-sm border border-[#EDE9F6] flex items-center justify-center shrink-0 transition-transform duration-300 group-hover:scale-125">
                       {icon}
                     </div>
                     <div>
@@ -292,8 +292,8 @@ export default async function AboutPage() {
                     desc: "Güvenilir ve sürdürülebilir ortaklık",
                   },
                 ].map(({ icon, title, desc }) => (
-                  <div key={title} className="flex-1 flex items-center gap-5 p-7">
-                    <div className="w-11 h-11 rounded-[12px] bg-white shadow-sm border border-[#EDE9F6] flex items-center justify-center shrink-0">
+                  <div key={title} className="group flex-1 flex items-center gap-5 p-7">
+                    <div className="w-11 h-11 rounded-[12px] bg-white shadow-sm border border-[#EDE9F6] flex items-center justify-center shrink-0 transition-transform duration-300 group-hover:scale-125">
                       {icon}
                     </div>
                     <div>
